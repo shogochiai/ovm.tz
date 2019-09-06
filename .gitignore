@@ -4,4 +4,4 @@ node_modules
 target
 dist
 dest
-*.pp.ligo
+**/*.pp.ligo
