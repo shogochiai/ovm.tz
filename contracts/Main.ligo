@@ -1,9 +1,8 @@
 #include "types/index.ligo"
-#include "Deposit.ligo"
+#include "deposit.ligo"
 
-function main (const act : action ; const s : int) : (list(operation) * int) is
-  block { skip } with ((nil : list(operation)),
-    case act of
-    | Deposit(deposit_params) -> deposit(s, deposit_params.amount)
-    end)
+function main (const action: action; const s: ovm_storage) : (list(operation) * ovm_storage) is
+block {skip} with case action of
+  | Deposit(deposit_params) -> deposit(deposit_params, s)
+end
 

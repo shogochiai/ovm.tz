@@ -1,3 +1,4 @@
-function deposit (const a : int ; const b : nat) : int is
-    block { skip } with a + b
-
+function deposit (const deposit_params: deposit_params; const s: ovm_storage) : (list(operation) * ovm_storage) is
+begin
+  skip
+end with ((nil: list(operation)), s)
