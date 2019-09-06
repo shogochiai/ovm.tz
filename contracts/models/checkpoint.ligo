@@ -1,4 +1,4 @@
-function create_checkpoint(const deposit_params: deposit_params; const s: ovm_storage) : (list(operation) * ovm_storage) is
+function create_checkpoint(const deposit_params: deposit_params; const s: ovm_storage) : context is
 begin
   skip
-end with ((nil: list(operation)), s)
+end with ((nil: ops), s)
