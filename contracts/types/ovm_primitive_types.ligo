@@ -17,6 +17,10 @@ type checkpoint is record
   subrange: range;
   state_update: state_update;
 end
+type checkpoint_status is record
+  challengeable_until: nat;
+  outstanding_challenges: nat;
+end
 type claim is record
   property: property;
   num_proven_contradictions: nat;

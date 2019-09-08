@@ -1,0 +1,31 @@
+record
+  commitments = map
+    1n -> "hoge";
+  end;
+  claims = map
+    "hoge" -> record
+      property = record
+        predicate_address = ("tz1TGu6TN5GSez2ndXXeDX6LgUDvLzPLqgYV": address);
+        input = "hoge";
+      end;
+      num_proven_contradictions = 1n;
+      decided_after = 1n;
+    end;
+  end;
+  checkpoints = map
+    "hoge" -> record
+      subrange = record
+        start_ = 1n; end_ = 1n;
+      end;
+      state_update = record
+        range = record start_ = 1n; end_ = 1n; end;
+        property = record
+          predicate_address = ("tz1TGu6TN5GSez2ndXXeDX6LgUDvLzPLqgYV": address);
+          input = "hoge";
+        end;
+        plasma_block_number = 1n;
+        deposit_address = ("tz1TGu6TN5GSez2ndXXeDX6LgUDvLzPLqgYV": address);
+      end;
+    end;
+  end;
+end

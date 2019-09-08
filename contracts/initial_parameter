@@ -1,0 +1,6 @@
+Deposit(
+  record
+    token_type = ("tz1TGu6TN5GSez2ndXXeDX6LgUDvLzPLqgYV":address);
+    amount = 1n;
+  end
+)
