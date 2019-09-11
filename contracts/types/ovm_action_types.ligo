@@ -1,5 +1,7 @@
+type token_type is address
+
 type deposit_params is record
-  token_type: address;
+  token_type: token_type;
   amount: nat;
 end
 
