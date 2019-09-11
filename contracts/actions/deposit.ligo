@@ -9,7 +9,6 @@ begin
   const deposit_reciever : contract(unit) = get_contract(source);
   const op: operation = transaction(unit, amount, deposit_reciever);
   const ops: ops = list op end;
-  const res: context = create_checkpoint(deposit_params, s);
 
 
   // create range
@@ -19,7 +18,10 @@ begin
   end;
 
   // create state_update
+
   // create checkpoint
+  const res: context = create_checkpoint(deposit_params, s);
+
   // update depositedRange global state
   // generate checkpointId
   // create checkpointStatus
